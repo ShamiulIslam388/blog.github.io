@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.box {
+    background: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.content {
+    padding: 20px;
+}
+
+
+img {
+    width: 100%;
+}
+
+hr {
+    height: 1px;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(221, 217, 217);
+}
+
+.header {
+    text-align: center;
+    margin: 32px 0;
+}
+
+.header p {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.header span {
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.left-content {
+    width: 66%;
+}
+
+.content-box {
+    margin-bottom: 40px;
+}
+
+.title {
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.title-description span {
+    color: #555;
+}
+
+.paragraph {
+    margin: 20px 0 30px;
+}
+
+.button-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    padding: 15px 25px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border: 1px solid #ccc;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    background: #ccc;
+}
+
+.comments span {
+    background: #000;
+    color: #fff;
+    padding: 3px 8px;
+    margin-left: 3px;
+    border-radius: 50%;
+}
+.right-content {
+    width: 30%;
+}
+
+.me-para {
+    margin-top: 10px;
+}
+
+.posts-title {
+    padding: 25px 20px;
+    background: #f1f1f1;
+}
+
+.popular-post:hover {
+    background: #ccc;
+}
+
+.post-content {
+    display: flex;
+    align-items: center;
+}
+
+.post-content img {
+    width: 50px;
+    height: 50px;
+}
+
+.post-text {
+    margin-left: 20px;
+}
+
+.tag-name {
+    font-size: 12px;
+    background: #f1f1f1;
+    padding: 2px 8px;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.tags-container .active {
+    background: #000;
+    color: #fff;
+    padding: 3px 8px;
+}
+
+.footer {
+    background: #616161;
+    padding: 32px 0;
+    text-align: center;
+}
+
+.next-btn {
+    background: #000;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    transform: 0.4s;
+}
+
+.next-btn:hover {
+    color: #000;
+}
+
+.previous-btn {
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: not-allowed;
+    opacity: 0.3;
+}
+
+.right-section {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.right-section span {
+    text-decoration: underline;
+    font-variant: small-caps;
+}
+
+@media screen and (max-width: 768px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .left-content,
+    .right-content {
+        width: 100%;
+    }
+}
